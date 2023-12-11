@@ -1,0 +1,39 @@
+.Home {
+  /* width: 110rem;
+  max-width: 95vw; */
+  /* margin: auto; */
+  width: 100%;
+  font-family: "Readex Pro", "Open Sans Condensed", "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.ContentArea {
+  position: absolute;
+  top: calc(var(--floofe-header-height) + 1rem);
+
+  --floofe-content-area-width: min(
+    calc(var(--floofe-content-area-width-fraction) * var(--floofe-width)),
+    calc(var(--floofe-content-area-width-fraction) * var(--floofe-max-width))
+  );
+  width: var(--floofe-content-area-width);
+
+  right: max(
+    calc((100vw - var(--floofe-width)) / 2),
+    calc((100% - var(--floofe-max-width)) / 2)
+  );
+  /* right: max(calc((100vw - var(--floofe-width))/2), calc((100vw - var(--floofe-max-width))/2)); */
+  /* height: calc(100% - var(--floofe-header-height) - 1rem); */
+  max-width: var(--floofe-max-width);
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .ContentArea {
+    --floofe-content-area-width: var(--floofe-width);
+    /* width: var(--floofe-width); */
+    right: calc((100% - var(--floofe-width)) / 2);
+  }
+}

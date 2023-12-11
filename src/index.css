@@ -1,0 +1,98 @@
+html {
+  font-size: 16px;
+}
+
+:root {
+  --floofe-color-0: #fff;
+  --floofe-color-1: #516BEB;
+  --floofe-color-2: #516bebf5;
+  --floofe-color-3: #000;
+  --floofe-color-4: #555;
+  --floofe-color-5: #eee;
+  --floofe-color-6: #f6f6f6;
+  --floofe-color-7: #fff;
+
+  --floofe-color-yes: rgb(64, 242, 255);
+  --floofe-color-no: rgb(255, 64, 64);
+  
+
+  --floofe-background-color: var(--floofe-color-7);
+  --floofe-max-width: 1600px;
+  --floofe-width: 96vw;
+  --floofe-main-color: var(--floofe-color-1);
+  --floofe-header-height: 4rem;
+  --floofe-sidebar-width: 0.28;
+  --floofe-content-area-width-fraction: 0.69;
+}
+
+:root[data-theme=dark] {
+  --floofe-color-0: rgb(20, 20, 20);
+  --floofe-color-1: #516BEB;
+  --floofe-color-2: #516bebf5;
+  --floofe-color-3: #fff;
+  --floofe-color-4: #eee;
+  --floofe-color-5: #333;
+  --floofe-color-6: #222;
+  --floofe-color-7: rgb(20, 20, 20);
+}
+
+@media only screen and (min-width : 2000px) {
+  :root {
+    --floofe-max-width: 2200px;
+    --floofe-sidebar-width: 0.2;
+    --floofe-content-area-width-fraction: 0.77;
+  }
+}
+
+@media only screen and (max-width : 700px) {
+  :root {
+    --floofe-width: 96vw;
+  }
+}
+
+@media only screen and (max-width : 700px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Readex Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: rgb(36, 36, 36); */
+  background-color: var(--floofe-color-7);
+  color: var(--floofe-color-3)
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+input {
+  background: none;
+  border: none;
+  font-family: 'Readex Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  color: var(--floofe-color-3);
+}
+
+input:focus {
+  background: none;
+  border: none;
+}
+
+input::placeholder {
+  color: var(--floofe-color-4);
+}

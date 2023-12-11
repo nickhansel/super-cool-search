@@ -1,0 +1,99 @@
+.SearchResult {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  /* background-color: var(--floofe-color-5); */
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--floofe-color-5);
+  box-shadow: 0px 0px 5px 0px var(--floofe-color-5);
+  font-weight: 400;
+}
+
+.Post {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.PostContent {
+  width: 100%;
+}
+.PostContent > * {
+  padding: 0.25rem 0rem 0.25rem 0rem;
+}
+
+.CommentContent > * {
+  padding: 0.25rem 0rem 0.25rem 0rem;
+}
+
+.PostTitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.PostText {
+  color: var(--floofe-color-4);
+  font-size: 1.1rem;
+}
+
+.PostExpandButton {
+  font-weight: 400;
+}
+.CommentExpandButton {
+  font-weight: 400;
+}
+
+.PostInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.CommentInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .PostInfo {
+    font-size: 0.6rem;
+    gap: 0.1rem;
+  }
+
+  .CommentInfo {
+    font-size: 0.6rem;
+    gap: 0.1rem;
+  }
+}
+.PostSubreddit {
+  font-weight: 400;
+}
+
+.EmojiIcon {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.PostThreads {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.PostComment {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 0rem);
+  gap: 1rem;
+}
+
+.SearchResultHighlight {
+  font-weight: 400;
+  color: var(--floofe-color-1);
+}

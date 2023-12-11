@@ -1,0 +1,113 @@
+.SideBarSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.SideBarHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.SideBarHeading-title {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.SideBarHeadingButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.SideBarHeadingButtons > * {
+  margin-left: 0.6rem;
+}
+
+.SideBarHeadingButton {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  border-radius: 0.2rem;
+  border: solid 2px var(--floofe-main-color);
+  padding: 0rem 0.6rem 0rem 0.6rem;
+  color: var(--floofe-main-color);
+  /* color: var(--floofe-color-1); */
+  text-align: center;
+}
+
+.SideBarHeadingButton:hover {
+  cursor: pointer;
+  color: var(--floofe-color-7);
+  /* border: solid 2px var(--floofe-color-0); */
+  background-color: var(--floofe-main-color);
+}
+
+.SideBarHeadingButton-add {
+  width: 1.2rem;
+  padding: 0;
+}
+
+.SideBarItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.SideBarItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin-top: 1rem; */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  align-items: center;
+}
+
+.SideBarItem:hover {
+  background-color: var(--floofe-color-6);
+}
+
+.SideBarItemLeft {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+}
+
+.SideBarItemTitle {
+  display: flex;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  align-items: center;
+  margin-left: 1rem;
+  width: 80%;
+}
+
+.SideBarItemHandle {
+  display: flex;
+  /* background-color: #666; */
+  height: 1rem;
+  width: 1rem;
+  /* border-radius: 2rem; */
+}
+
+.SideBarItemHandle img {
+  height: 1rem;
+  width: 1rem;
+}
+
+.SideBarFooter {
+  display: flex;
+  margin-top: 1rem;
+  font-weight: 400;
+  color: var(--floofe-color-4);
+  margin-left: 1rem;
+  padding-top: 0.2;
+}
+
+.SideBarSeeAll:hover {
+  cursor: pointer;
+  color: var(--floofe-color-3);
+}

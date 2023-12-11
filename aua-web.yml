@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aua-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aua-web
+  template:
+    metadata:
+      labels:
+        app: aua-web
+    spec:
+      containers:
+      - name: aua-web
+        image: ""
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "100Mi"
+          limits:
+            memory: "200Mi"
+        ports:
+        - containerPort: 80
+      nodeSelector:
+        cloud.google.com/gke-nodepool: default

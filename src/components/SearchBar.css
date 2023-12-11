@@ -1,0 +1,36 @@
+.SearchBox {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.SearchBar {
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 100%;
+  background-color: var(--floofe-color-6);
+}
+
+.SearchBar input {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: calc(100% - 3rem);
+  font-size: 1rem;
+  margin-left: 1.5em;
+  color: var(--floofe-color-4);
+}
+
+.SearchBar input:focus {
+  color: var(--floofe-color-3);
+}
+
+.SearchBar input::placeholder {
+  color: var(--floofe-color-4);
+}

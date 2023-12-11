@@ -1,0 +1,15 @@
+@keyframes spinner {
+  to {transform: rotate(-360deg);}
+}
+
+.LoadingImage {
+  height: 20rem;
+  width: 20rem;
+  animation: spinner 1s linear infinite;
+}
+
+.SpinnerBox {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}

@@ -1,0 +1,43 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1000px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.Blurb {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.Blurb:hover {
+  background-color: var(--floofe-color-6);
+}
+
+.PostThreads {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.PostThreads > div {
+  margin-bottom: 0.5rem;
+}
+
+.PostComment {
+  width: calc(100% - 2rem);
+  display: flex;
+  position: relative;
+}
+
+.PostOPRes {
+  width: calc(100% - 4rem);
+  display: flex;
+  position: relative;
+}

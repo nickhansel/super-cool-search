@@ -1,0 +1,48 @@
+.Button {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  color: var(--floofe-color-7);
+  background-color: var(--floofe-color-1);
+}
+
+.Button:hover {
+  color: var(--floofe-color-3);
+  background-color: var(--floofe-color-2);
+}
+
+.ButtonInverted {
+  color: var(--floofe-color-1);
+  background-color: var(--floofe-color-7);
+}
+
+.ButtonInverted:hover {
+  color: var(--floofe-color-2);
+  background-color: var(--floofe-color-6);
+}
+
+.ButtonSmall {
+  padding: 0.35rem 0.7rem;
+  border-radius: 100rem 100rem 100rem 0.1rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.8rem;
+  border: 0.1rem solid;
+}
+
+.ButtonMed {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  font-size: 0.75rem;
+  border: 0.1rem solid;
+}
+
+.ButtonLarge {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 1rem;
+}

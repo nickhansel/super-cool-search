@@ -1,0 +1,129 @@
+.Header {
+  height: var(--floofe-header-height);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* background-color: rgb(36, 36, 36); */
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid var(--floofe-color-5);
+  background-color: var(--floofe-color-7);
+}
+
+.HeaderSpacer {
+  /* This is to accomodate the fixed Header element */
+  height: var(--floofe-header-height);
+  width: 100%;
+}
+
+.HeaderContent {
+  width: var(--floofe-width);
+  max-width: var(--floofe-max-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.HeaderLogo {
+  font-family: "Readex Pro", sans-serif;
+  color: var(--floofe-color-3);
+  font-size: 2rem;
+  line-height: var(--floofe-header-height);
+  height: var(--floofe-header-height);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+:root[data-theme="dark"] .HeaderLogo {
+  text-shadow: none;
+}
+
+.HeaderLogoImage {
+  height: calc(var(--floofe-header-height) * 0.8);
+  width: calc(var(--floofe-header-height) * 0.8);
+}
+
+.HeaderThemeSetter {
+  display: flex;
+  flex-direction: row;
+  height: calc(var(--floofe-header-height));
+  line-height: calc(var(--floofe-header-height));
+  cursor: pointer;
+}
+
+.ActiveTheme {
+  font-size: 1.5rem;
+  height: calc(var(--floofe-header-height));
+  line-height: calc(var(--floofe-header-height));
+}
+
+.InactiveTheme {
+  font-size: 1rem;
+  height: calc(var(--floofe-header-height));
+  line-height: calc(var(--floofe-header-height));
+}
+
+.HeaderButtons {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.HeaderButton {
+  font-size: 1rem;
+  font-weight: 700;
+  height: var(--floofe-header-height);
+  line-height: var(--floofe-header-height);
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .HeaderLogoText {
+    display: none;
+  }
+
+  .HeaderButtons {
+    gap: 0rem;
+  }
+
+  .InactiveTheme {
+    font-size: 0.8rem;
+  }
+  .ActiveTheme {
+    font-size: 1.2rem;
+  }
+
+  .HeaderButton {
+    font-size: 0.8rem;
+    font-weight: 700;
+    /* border-radius: .5rem; */
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+.HeaderButton:hover {
+  cursor: pointer;
+}
+
+.HeaderJoin {
+  color: var(--floofe-color-4);
+}
+
+.HeaderJoin:hover {
+  background-color: var(--floofe-color-5);
+}
+
+.HeaderLogin {
+  color: var(--floofe-color-4);
+}
+
+.HeaderLogin:hover {
+  background-color: var(--floofe-color-5);
+}
